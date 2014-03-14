@@ -1,0 +1,310 @@
+@font-face
+{
+	font-family: ec;
+	src: url(../ttf/HANDG.ttf);
+}
+
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+width: 100%;
+}
+.navbar-form.navbar-right:last-child {
+margin-right: 10px;
+}
+.container{
+	margin-left:10px;
+}
+
+button, input, optgroup, select, textarea {
+color: inherit;
+font: inherit;
+margin: 8;
+
+}
+body
+{
+	
+	overflow-x:hidden;
+	overflow-y:hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+
+.navbar-brand {
+font-size: 36px;
+height : 52px;
+font-family: ec;
+margin-top: 4px
+}
+
+btn{
+font-family: ec;
+}
+.btn-custom-darken.active {
+	color: rgba(100, 100, 100, 0.75);
+}
+.btn-custom-darken {
+	margin-top: -1px;
+	font-family: ec;
+	font-size: 20px;
+	color: #222;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #e4e4e4;
+	background-image: -moz-linear-gradient(top, #eeeeee, #d5d5d5);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#d5d5d5));
+	background-image: -webkit-linear-gradient(top, #eeeeee, #d5d5d5);
+	background-image: -o-linear-gradient(top, #eeeeee, #d5d5d5);
+	background-image: linear-gradient(to bottom, #eeeeee, #d5d5d5);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffd5d5d5', GradientType=0);
+	border-color: #d5d5d5 #d5d5d5 #aeaeae;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	*background-color: #d5d5d5;
+	/* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-custom-darken:hover,
+.btn-custom-darken:focus,
+.btn-custom-darken:active,
+.btn-custom-darken.active,
+.btn-custom-darken.disabled,
+.btn-custom-darken[disabled] {
+	color: #b7b4a7;
+	background-color: #d5d5d5;
+	*background-color: #c8c8c8;
+}
+.btn-custom-darken:active,
+.btn-custom-darken.active {
+	background-color: #bbbbbb ;
+}
+
+
+
+div#container{
+	
+	width :80%;
+	height :80%;
+	position:fixed;
+	top: 40px;
+	left : 0px;
+	color: #222;
+
+}
+.ui-draggable{
+	font-size:50px;
+	font-family: ec;
+	display:inline;
+	text-shadow: -1px 0 3px #1E1E1E;
+	margin:0;
+	padding:0;
+	color: #222;
+}
+
+#trash{
+	position: absolute; bottom: 0;
+	width: 120px;
+	height: auto;
+	margin:0px auto;
+	left:0;
+	right:0;
+
+}
+
+img#trash.ui-droppable.trashHover{
+	width: 150px;
+}
+
+#myDiv
+{
+	cursor: pointer;
+}
+
+
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+.headerButton{
+	padding : 10px;
+	width: 64px;
+	height: auto;
+}
+
+
+
+
+/**
+ * The CSS in this file is for styling the demo page,
+ * Meny's critical styles (such as transforms) are applied
+ * via JavaScript.
+ *
+ * See the documentation here: https://github.com/hakimel/meny#meny
+ *
+ * @author Hakim El Hattab | http://hakim.se
+ */
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ html,
+ body {
+ 	height: 100%;
+ 	overflow: hidden;
+ }
+
+ body {
+ 	background-color: #222;
+ 	background-image:url("../img/ios-linen.jpg");
+ 	background-repeat: repeat;
+
+ 	font-family: 'Lato', Helvetica, sans-serif;
+ 	font-size: 16px;
+ 	color: #222;
+ }
+
+ a {
+ 	color: #c2575b;
+ 	text-decoration: none;
+
+ 	-webkit-transition: 0.15s color ease;
+ 	-moz-transition: 0.15s color ease;
+ 	-ms-transition: 0.15s color ease;
+ 	-o-transition: 0.15s color ease;
+ 	transition: 0.15s color ease;
+ }
+ a:hover {
+ 	color: #f76f76;
+ }
+
+ h1,
+ h2 {
+ 	font-size: 24px;
+ }
+
+ .meny {
+ 	display: none;
+ 	padding: 20px;
+ 	overflow: auto;
+ 	background: #333;
+ 	color: #eee;
+font-family: ec;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+ .meny ul {
+ 	margin-top: 10px;
+ }
+ .meny ul li {
+ 	display: inline-block;
+ 	width: 200px;
+ 	list-style: none;
+ 	font-size: 20px;
+ 	padding: 3px 10px;
+ }
+ .meny ul li:before {
+ 	content: '-';
+ 	margin-right: 5px;
+ 	color: rgba( 255, 255, 255, 0.2 );
+ }
+
+/**
+ * Hint graphic that appears while menu is inactive
+ */
+ .meny-arrow {
+ 	position: absolute;
+ 	z-index: 10;
+
+ 	border: 10px solid transparent;
+
+ 	-webkit-transition: opacity 0.4s ease 0.4s;
+ 	-moz-transition: opacity 0.4s ease 0.4s;
+ 	-ms-transition: opacity 0.4s ease 0.4s;
+ 	-o-transition: opacity 0.4s ease 0.4s;
+ 	transition: opacity 0.4s ease 0.4s;
+ }
+ .meny-left .meny-arrow {
+ 	left: 14px;
+ 	top: 50%;
+ 	margin-top: -16px;
+ 	border-left: 16px solid #333;
+ }
+ .meny-right .meny-arrow {
+ 	right: 14px;
+ 	top: 50%;
+ 	margin-top: -16px;
+ 	border-right: 16px solid #333;
+ }
+ .meny-top .meny-arrow {
+ 	left: 50%;
+ 	top: 14px;
+ 	margin-left: -16px;
+ 	border-top: 16px solid #333;
+ }
+ .meny-bottom .meny-arrow {
+ 	left: 50%;
+ 	bottom: 14px;
+ 	margin-left: -16px;
+ 	border-bottom: 16px solid #333;
+ }
+ .meny-active .meny-arrow {
+ 	opacity: 0;
+
+ 	-webkit-transition: opacity 0.2s ease;
+ 	-moz-transition: opacity 0.2s ease;
+ 	-ms-transition: opacity 0.2s ease;
+ 	-o-transition: opacity 0.2s ease;
+ 	transition: opacity 0.2s ease;
+ }
+
+/**
+ * Main contents area
+ */
+ .contents {
+ 	background: #eee;
+ 	padding: 20px 40px;
+ 	width: 100%;
+ 	height: 100%;
+ 	overflow-y: auto;
+
+ 	-webkit-overflow-scrolling: touch;
+ 	-webkit-transform-style: preserve-3d;
+
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+ .contents>article {
+ 	max-width: 400px;
+ }
+ .contents p {
+ 	margin: 10px 0 10px 0;
+ 	font-size: 16px;
+ 	line-height: 1.32;
+ }
+ .contents small {
+ 	display: block;
+ 	margin-top: 10px;
+ 	padding-top: 10px;
+ 	color: #333;
+ 	font-size: 0.85em;
+ 	border-top: 1px dashed #ccc;
+
+ 	-webkit-text-size-adjust: none;
+ }
+ .contents .sharing {
+ 	position: absolute;
+ 	bottom: 20px;
+ }
+
+
